@@ -31,8 +31,8 @@ public class AutorServicio {
             try {
                 System.out.print("Ingrese el año: ");
                 anio = Integer.parseInt(scanner.nextLine());
-                if (anio < 0 || anio > Year.now().getValue()) {
-                    System.out.println("Año inválido. Intente nuevamente.");
+                if (anio < -1105 || anio > Year.now().getValue()) {
+                    System.out.println("Año inválido. Intente nuevamente (válido entre -1105 y el actual).");
                     continue;
                 }
                 break;
@@ -41,17 +41,18 @@ public class AutorServicio {
             }
         }
 
-        List<Autor> autores = autorRepositorio
-                .findByFechaNacimientoLessThanEqualAndFechaFallecimientoGreaterThanEqual(anio, anio);
+        List<Autor> autores = (anio < 0)
+                ? autorRepositorio.findAutoresVivosEnAnio(anio)
+                : autorRepositorio.findByFechaNacimientoLessThanEqualAndFechaFallecimientoGreaterThanEqual(anio, anio);
 
         if (autores.isEmpty()) {
             System.out.println("No se encontraron autores vivos en ese año.");
         } else {
-            for (Autor autor : autores) {
-                System.out.println("Autor: " + autor);
-            }
+            System.out.println("Autores vivos en el año " + anio + ":");
+            autores.forEach(autor -> System.out.println("Autor: " + autor));
         }
     }
+}
 
     //Metodo para retornar autores vivos segun el año desde la API
 //    public void getAutoresPorAnio() {
@@ -73,4 +74,3 @@ public class AutorServicio {
     // /books?author_year_end=-499 gives books with authors alive before 500 BCE,
     // and /books?author_year_start=1800&author_year_end=1899 gives books with authors alive in the 19th Century.
 
-}

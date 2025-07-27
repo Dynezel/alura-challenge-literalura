@@ -33,7 +33,7 @@ public class MenuPrincipal {
 
             switch (opcion) {
                 case 1:
-                    libroServicio.getDatosLibro();
+                    libroServicio.buscarYGuardarLibrosPorTitulo();
                     break;
                 case 2:
                     libroServicio.listarTodosLosLibros();

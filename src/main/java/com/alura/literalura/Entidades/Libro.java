@@ -79,9 +79,9 @@ import java.util.Optional;
     @Override
     public String toString() {
         return
-                "idLibro=" + idLibro + '\n' +
-                ", titulo='" + titulo + '\n' +
-                ", idiomas=" + idiomas + '\n' +
+                "idLibro=" + idLibro +
+                ", titulo='" + titulo +
+                ", idiomas=" + idiomas +
                 ", cantidadDescargas=" + cantidadDescargas + '\n';
     }
 

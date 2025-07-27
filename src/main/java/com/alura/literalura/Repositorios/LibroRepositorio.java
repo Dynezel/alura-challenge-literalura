@@ -13,4 +13,5 @@ public interface LibroRepositorio extends JpaRepository<Libro, Long> {
 
     List<Libro> findByIdiomas(List<String> idioma);
 
+    boolean existsByTitulo(String titulo);
 }

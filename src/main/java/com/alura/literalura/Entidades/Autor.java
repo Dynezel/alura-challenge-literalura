@@ -13,8 +13,8 @@ public class Autor {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Id;
     private String nombre;
-    private int fechaNacimiento;
-    private int fechaFallecimiento;
+    private Integer fechaNacimiento;
+    private Integer fechaFallecimiento;
     @OneToMany(mappedBy = "autor", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Libro> libros = new ArrayList<>();
 
