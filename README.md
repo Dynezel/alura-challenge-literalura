@@ -40,9 +40,6 @@ Maven
 💻 Cómo ejecutar el proyecto
 Clona este repositorio:
 
-bash
-Copiar
-Editar
 git clone https://github.com/Dynezel/alura-challenge-literalura.git
 Abre el proyecto en tu IDE (IntelliJ, Eclipse, VSCode, etc.).
 
