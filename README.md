@@ -45,4 +45,8 @@ Abre el proyecto en tu IDE (IntelliJ, Eclipse, VSCode, etc.).
 
 Ejecuta la clase principal LiteraluraApplication.
 
+<<<<<<< HEAD
 Se abrirá el menú en la consola donde podrás elegir las distintas opciones.
+=======
+Se abrirá el menú en la consola donde podrás elegir las distintas opciones.
+>>>>>>> dd008645020331bc4735051e11a5f833aa3d1d4b
