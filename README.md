@@ -4,9 +4,6 @@ Este es un proyecto Java desarrollado con Spring Boot que consume la API de Gute
 🚀 Funcionalidades
 El programa se ejecuta en consola y permite al usuario realizar las siguientes acciones:
 
-css
-Copiar
-Editar
 1 - Buscar Libros Por Título  
 2 - Listar Libros Registrados  
 3 - Listar Autores Registrados  
@@ -46,7 +43,7 @@ Clona este repositorio:
 bash
 Copiar
 Editar
-git clone https://github.com/tu-usuario/proyecto-gutendex-spring.git
+git clone https://github.com/Dynezel/alura-challenge-literalura.git
 Abre el proyecto en tu IDE (IntelliJ, Eclipse, VSCode, etc.).
 
 Ejecuta la clase principal LiteraluraApplication.
